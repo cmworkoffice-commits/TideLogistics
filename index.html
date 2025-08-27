@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Services | Tide Solution - Global Supply Chain Experts</title>
+    <meta name="description" content="Tide Solution offers top-tier logistics services, including transportation, warehousing, inventory management, and order fulfillment. Optimize your supply chain with our global expertise.">
+    <meta name="keywords" content="logistics services, supply chain management, global transportation, warehousing, inventory management, order fulfillment, Tide Solution">
+    <meta name="author" content="Tide Solution">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="Tide Solution - Logistics and Supply Chain Solutions">
+    <meta property="og:description" content="Discover efficient logistics services with Tide Solution, your partner for global transportation, warehousing, and inventory management.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tidesolution.com">
+    <meta property="og:image" content="https://source.unsplash.com/random/1200x630/?logistics">
+    <link rel="canonical" href="https://www.tidesolution.com">
+    <link rel="sitemap" href="/sitemap.xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #eff6ff;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .skyline-bg {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%239ca3af" opacity="0.3" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,245.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: bottom;
+            background-attachment: fixed; /* Parallax effect */
+        }
+        .geometric-left {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 150px;
+            background: linear-gradient(to bottom, #3b82f6 33%, white 33%, white 66%, #3b82f6 66%);
+            clip-path: circle(50% at 50% 50%);
+            opacity: 0.5;
+            transition: transform 0.3s ease;
+        }
+        .geometric-left:hover {
+            transform: translateY(-50%) scale(1.2);
+        }
+        .geometric-right {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 150px;
+            background: linear-gradient(to bottom, white 33%, #3b82f6 33%, #3b82f6 66%, white 66%);
+            clip-path: circle(50% at 50% 50%);
+            opacity: 0.5;
+            transition: transform 0.3s ease;
+        }
+        .geometric-right:hover {
+            transform: translateY(-50%) scale(1.2);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+        .accordion-item {
+            transition: max-height 0.3s ease;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg sticky top-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://placehold.co/40x40?text=TS" alt="Tide Solution Logo" class="mr-2" width="40" height="40">
+                <span class="text-2xl font-bold">Tide Solution</span>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:underline hover:text-yellow-300 transition-colors" aria-label="Home page">Home</a></li>
+                <li><a href="#about" class="hover:underline hover:text-yellow-300 transition-colors" aria-label="About us">About</a></li>
+                <li><a href="#service" class="hover:underline hover:text-yellow-300 transition-colors" aria-label="Our services">Service</a></li>
+                <li><a href="#contact" class="hover:underline hover:text-yellow-300 transition-colors" aria-label="Contact us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="relative gradient-bg text-white py-24 skyline-bg" data-aos="fade-up">
+        <div class="geometric-left"></div>
+        <div class="geometric-right"></div>
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-6xl font-bold mb-6 leading-tight">Tide Solution - Your Logistics Powerhouse</h1>
+            <p class="text-3xl mb-10 font-light">Revolutionizing Supply Chains with Cutting-Edge Concepts, Processes, and Trends</p>
+            <p class="mb-8 text-lg max-w-3xl mx-auto">At Tide Solution, we deliver unparalleled logistics services designed for the modern world. From seamless global transportation to intelligent inventory management, our solutions ensure your business stays ahead in a competitive market.</p>
+            <a href="#contact" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 hover:scale-105 transition-all" aria-label="Request a logistics quote">Get a Free Quote Today</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-24 bg-white" data-aos="fade-right">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-blue-600 mb-10 text-center">Introduction to Tide Solution</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <p class="mb-6 text-lg leading-relaxed">Tide Solution stands at the forefront of logistics innovation, offering comprehensive solutions that streamline your supply chain operations. Our commitment to excellence ensures that every aspect of your logistics needs is handled with precision and care.</p>
+                    <p class="mb-6 text-lg leading-relaxed">With a team of seasoned professionals and state-of-the-art technology, we provide real-time insights, predictive analytics, and customized strategies to optimize your logistics workflow. Experience reduced costs, faster deliveries, and enhanced reliability with Tide Solution.</p>
+                    <ul class="list-disc pl-6 mb-6 text-lg">
+                        <li>Global network for seamless international shipping</li>
+                        <li>Advanced AI-driven route optimization</li>
+                        <li>Sustainable practices for eco-friendly logistics</li>
+                        <li>24/7 customer support and tracking</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://source.unsplash.com/random/600x400/?port" alt="Busy port with cargo logistics" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#service" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 hover:scale-105 transition-all" aria-label="Explore logistics services">Discover Our Comprehensive Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-blue-100 skyline-bg" data-aos="zoom-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-blue-600 mb-10 text-center">Discover Tide Solution</h2>
+            
+            <!-- Key Components -->
+            <h3 class="text-4xl font-semibold mb-8 text-center">Core Logistics Components</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover" data-aos="flip-left">
+                    <img src="https://source.unsplash.com/random/300x200/?truck" alt="Truck transportation for logistics" class="mb-4 rounded-lg" width="300" height="200" loading="lazy">
+                    <h4 class="text-2xl font-bold mb-2">Transportation</h4>
+                    <p class="text-gray-600 mb-4">Efficient, multi-modal transport solutions ensuring on-time deliveries worldwide.</p>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Air freight for urgent shipments</li>
+                        <li>Sea cargo for bulk goods</li>
+                        <li>Rail and road for domestic efficiency</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover" data-aos="flip-left" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/random/300x200/?warehouse" alt="Warehouse storage facility" class="mb-4 rounded-lg" width="300" height="200" loading="lazy">
+                    <h4 class="text-2xl font-bold mb-2">Warehousing</h4>
+                    <p class="text-gray-600 mb-4">State-of-the-art facilities with climate control and security.</p>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Automated storage systems</li>
+                        <li>Real-time inventory visibility</li>
+                        <li>Customizable storage options</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover" data-aos="flip-left" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/random/300x200/?inventory" alt="Inventory management system" class="mb-4 rounded-lg" width="300" height="200" loading="lazy">
+                    <h4 class="text-2xl font-bold mb-2">Inventory Management</h4>
+                    <p class="text-gray-600 mb-4">Smart systems for accurate tracking and forecasting.</p>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>AI-powered demand prediction</li>
+                        <li>Barcode and RFID integration</li>
+                        <li>Stock level alerts</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover" data-aos="flip-left" data-aos-delay="300">
+                    <img src="https://source.unsplash.com/random/300x200/?fulfillment" alt="Order fulfillment process" class="mb-4 rounded-lg" width="300" height="200" loading="lazy">
+                    <h4 class="text-2xl font-bold mb-2">Order Fulfillment</h4>
+                    <p class="text-gray-600 mb-4">Fast, accurate processing from order to delivery.</p>
+                    <ul class="list-disc pl-4 text-sm">
+                        <li>Automated picking and packing</li>
+                        <li>Integration with e-commerce platforms</li>
+                        <li>Same-day shipping options</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- History & Evolution -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">The Evolution of Logistics</h3>
+            <div class="flex flex-col md:flex-row items-start gap-8" data-aos="fade-up">
+                <div class="md:w-1/2">
+                    <img src="https://source.unsplash.com/random/600x400/?logistics-history" alt="Historical logistics operations" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="text-3xl font-bold mb-4">Industrial Revolution Era</h4>
+                    <p class="mb-6 text-lg">The birth of modern logistics through mass production and efficient distribution networks. Tide Solution honors this heritage by blending time-tested methods with innovative approaches.</p>
+                    <h4 class="text-3xl font-bold mb-4">Digital Age Transformation</h4>
+                    <p class="mb-6 text-lg">Embracing AI, blockchain, and IoT for smarter, faster logistics. Our digital tools provide unparalleled visibility and efficiency in supply chain management.</p>
+                    <p class="text-lg">From automated warehouses to predictive maintenance, we're shaping the future of logistics.</p>
+                </div>
+            </div>
+
+            <!-- Types of Logistics -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Diverse Logistics Types</h3>
+            <div class="flex flex-col md:flex-row gap-8" data-aos="fade-left">
+                <div class="md:w-1/3">
+                    <img src="https://source.unsplash.com/random/400x300/?ship" alt="Cargo ship for global logistics" class="rounded-xl shadow-2xl card-hover" width="400" height="300" loading="lazy">
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 text-xl font-bold">1</span>
+                            <h4 class="text-2xl font-bold">Inbound Logistics</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Streamlining supplier-to-facility material flow with quality assurance.</p>
+                        <ul class="list-disc pl-4 text-sm">
+                            <li>Vendor management</li>
+                            <li>Quality control checks</li>
+                            <li>Just-in-time delivery</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 text-xl font-bold">2</span>
+                            <h4 class="text-2xl font-bold">Outbound Logistics</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Optimizing product distribution to end customers.</p>
+                        <ul class="list-disc pl-4 text-sm">
+                            <li>Route optimization</li>
+                            <li>Last-mile delivery</li>
+                            <li>Customer tracking portals</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 text-xl font-bold">3</span>
+                            <h4 class="text-2xl font-bold">Reverse Logistics</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Efficient handling of returns and recycling.</p>
+                        <ul class="list-disc pl-4 text-sm">
+                            <li>Return authorization</li>
+                            <li>Refurbishment services</li>
+                            <li>Sustainable disposal</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mr-3 text-xl font-bold">4</span>
+                            <h4 class="text-2xl font-bold">Third-Party Logistics</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Expert outsourcing for scalable operations.</p>
+                        <ul class="list-disc pl-4 text-sm">
+                            <li>Custom logistics strategies</li>
+                            <li>Scalable resources</li>
+                            <li>Cost-effective solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 hover:scale-105 transition-all" aria-label="Schedule a logistics consultation">Book Your Free Consultation Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section id="service" class="py-24 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-blue-600 mb-10 text-center">Our Premium Logistics Services</h2>
+            
+            <!-- Transportation -->
+            <h3 class="text-4xl font-semibold mb-8 text-center">Advanced Transportation Solutions</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h4 class="text-3xl font-bold mb-4">Multi-Modal Transport Expertise</h4>
+                    <p class="mb-6 text-lg">Tide Solution's transportation services cover air, sea, rail, and road, providing flexible options for all your shipping needs. Our global network ensures reliable, cost-effective delivery.</p>
+                    <p class="mb-6 text-lg">Leveraging AI for route optimization, we minimize delays and reduce environmental impact while maximizing efficiency.</p>
+                    <ul class="list-disc pl-6 mb-6 text-lg">
+                        <li>Real-time GPS tracking</li>
+                        <li>Customs clearance assistance</li>
+                        <li>Hazardous materials handling</li>
+                        <li>Express delivery options</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photos/gray-airplane-on-parking-RSYBi_1fhfM?auto=format&fit=crop&w=300&q=80" alt="Airplane cargo logistics" class="rounded-lg shadow-lg card-hover" width="300" height="200" loading="lazy">
+                    <img src="https://source.unsplash.com/random/300x200/?ship" alt="Sea cargo logistics" class="rounded-lg shadow-lg card-hover" width="300" height="200" loading="lazy">
+                    <img src="https://source.unsplash.com/random/300x200/?train" alt="Rail cargo logistics" class="rounded-lg shadow-lg card-hover" width="300" height="200" loading="lazy">
+                    <img src="https://images.unsplash.com/photos/a-red-semi-truck-driving-down-a-highway-dlyz37qqHfM?auto=format&fit=crop&w=300&q=80" alt="Truck cargo transportation" class="rounded-lg shadow-lg card-hover" width="300" height="200" loading="lazy">
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <img src="https://images.unsplash.com/photos/evening-view-of-a-passenger-plane-wing-with-engine-rIW0doyBrK0?auto=format&fit=crop&w=600&q=80" alt="Airplane cargo wing view" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                <img src="https://images.unsplash.com/photos/semi-truck-trailer-on-parking-road-freight-cargo-truck-transportation-DiiVrt4U6O0?auto=format&fit=crop&w=600&q=80" alt="Semi-truck cargo parking" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                <img src="https://images.unsplash.com/photos/a-large-group-of-trucks-parked-next-to-each-other-pENVeOjnT7g?auto=format&fit=crop&w=600&q=80" alt="Group of cargo trucks" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+            </div>
+
+            <!-- Warehousing & Storage -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">State-of-the-Art Warehousing</h3>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photos/aisle-of-a-storage-area-with-numerous-stainless-steel-racks-loaded-with-cargo-cardboard-boxes-On_1eB9U6k0?auto=format&fit=crop&w=600&q=80" alt="Cargo warehouse storage" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg card-hover">
+                        <h4 class="text-2xl font-bold mb-2">Inbound Logistics</h4>
+                        <p class="text-gray-600">Efficient receiving, inspection, and storage of incoming inventory.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg card-hover">
+                        <h4 class="text-2xl font-bold mb-2">Outbound Logistics</h4>
+                        <p class="text-gray-600">Rapid picking, packing, and dispatching of orders.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg card-hover">
+                        <h4 class="text-2xl font-bold mb-2">Reverse Logistics</h4>
+                        <p class="text-gray-600">Streamlined processing of returns and exchanges.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg card-hover">
+                        <h4 class="text-2xl font-bold mb-2">Third-Party Logistics</h4>
+                        <p class="text-gray-600">Flexible, scalable storage for business partners.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <img src="https://images.unsplash.com/photos/a-forklift-parked-inside-of-a-warehouse-_FF8CJbcios?auto=format&fit=crop&w=600&q=80" alt="Forklift in cargo warehouse" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                <img src="https://images.unsplash.com/photos/a-storage-manager-looking-upwards-mcX1j2QBFa0?auto=format&fit=crop&w=600&q=80" alt="Warehouse storage manager" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                <img src="https://images.unsplash.com/photos/yellow-and-white-containers-l5plFZq7E28?auto=format&fit=crop&w=600&q=80" alt="Cargo containers in warehouse" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+            </div>
+
+            <!-- Inventory Management -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Intelligent Inventory Management</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://source.unsplash.com/random/600x400/?inventory" alt="Inventory management dashboard" class="rounded-xl shadow-2xl card-hover" width="600" height="400" loading="lazy">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="mb-6 text-lg">Our cutting-edge inventory system provides comprehensive control over your stock, with features like automated reordering and predictive analytics to prevent shortages or overstock.</p>
+                    <p class="mb-6 text-lg">Integrate seamlessly with your existing ERP systems for a unified view of your supply chain.</p>
+                    <ul class="list-disc pl-6 text-lg mb-6">
+                        <li>Multi-location tracking</li>
+                        <li>Batch and serial number management</li>
+                        <li>Expiration date monitoring</li>
+                        <li>Custom reporting tools</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Order Fulfillment Process -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Efficient Order Fulfillment</h3>
+            <div class="flex flex-col md:flex-row items-start gap-8">
+                <div class="md:w-1/3">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/40x40?text=📦" alt="Order processing icon" class="mr-3" width="40" height="40">
+                        <h4 class="text-2xl font-bold">Processing Steps</h4>
+                    </div>
+                    <p class="mb-6 text-lg">From verification to shipping, our process ensures accuracy at every stage.</p>
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/40x40?text=⏱️" alt="Speed icon" class="mr-3" width="40" height="40">
+                        <h4 class="text-2xl font-bold">Accuracy & Speed</h4>
+                    </div>
+                    <p class="mb-6 text-lg">Minimizing errors while maximizing throughput for superior service.</p>
+                </div>
+                <div class="md:w-1/3">
+                    <canvas id="pieChart" width="300" height="300" aria-label="Order fulfillment distribution chart" class="mx-auto"></canvas>
+                </div>
+                <div class="md:w-1/3">
+                    <h4 class="text-2xl font-bold mb-4">Customer Satisfaction Impact</h4>
+                    <p class="mb-6 text-lg">Our fulfillment excellence translates to happy customers and loyal partnerships. We focus on precision to deliver beyond expectations.</p>
+                    <ul class="list-disc pl-6 text-lg">
+                        <li>99.9% accuracy rate</li>
+                        <li>Real-time order status updates</li>
+                        <li>Flexible return policies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Reverse Logistics -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Comprehensive Reverse Logistics</h3>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="md:w-1/2">
+                    <p class="mb-6 text-lg">Expert management of product returns, repairs, and recycling to maximize value recovery and minimize waste.</p>
+                    <ul class="list-disc pl-6 text-lg mb-6">
+                        <li>Automated RMA processing</li>
+                        <li>Quality inspection protocols</li>
+                        <li>Eco-friendly recycling partnerships</li>
+                        <li>Detailed reporting on return trends</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <canvas id="lineChart" width="400" height="200" aria-label="Reverse logistics performance chart" class="mx-auto"></canvas>
+                </div>
+            </div>
+
+            <!-- Technology in Logistics -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Cutting-Edge Logistics Technology</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-2/3">
+                    <h4 class="text-3xl font-bold mb-4">IoT & Smart Tracking Systems</h4>
+                    <p class="mb-6 text-lg">Harnessing IoT for real-time visibility, predictive analytics, and enhanced security throughout the supply chain.</p>
+                    <p class="mb-6 text-lg">Our integrated platforms provide actionable insights and seamless connectivity with your systems.</p>
+                    <ul class="list-disc pl-6 text-lg">
+                        <li>Smart sensors for condition monitoring</li>
+                        <li>Blockchain for secure transactions</li>
+                        <li>AI-driven anomaly detection</li>
+                        <li>Mobile apps for on-the-go management</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3">
+                    <img src="https://source.unsplash.com/random/400x300/?technology-logistics" alt="IoT logistics technology" class="rounded-xl shadow-2xl card-hover" width="400" height="300" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Challenges in Logistics -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Overcoming Logistics Challenges</h3>
+            <div class="space-y-8">
+                <div class="flex items-start gap-4 bg-blue-50 p-6 rounded-xl shadow-lg card-hover">
+                    <img src="https://placehold.co/50x50?text=🚚" alt="Transportation icon" class="mt-1" width="50" height="50">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">Rising Costs</h4>
+                        <p class="text-lg">We combat increasing expenses through efficient routing, bulk negotiations, and alternative fuel technologies.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 bg-blue-50 p-6 rounded-xl shadow-lg card-hover">
+                    <img src="https://placehold.co/50x50?text=🔗" alt="Supply chain icon" class="mt-1" width="50" height="50">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">Disruptions</h4>
+                        <p class="text-lg">Our robust contingency plans and diversified networks ensure business continuity in the face of unexpected events.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4 bg-blue-50 p-6 rounded-xl shadow-lg card-hover">
+                    <img src="https://placehold.co/50x50?text=🌿" alt="Sustainability icon" class="mt-1" width="50" height="50">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">Environmental Impact</h4>
+                        <p class="text-lg">Implementing green initiatives like electric fleets and optimized routes to reduce carbon emissions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sustainability -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Commitment to Sustainable Logistics</h3>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <p class="mb-6 text-lg">Tide Solution leads in eco-friendly logistics, integrating sustainable practices across all operations to help you meet environmental goals without compromising efficiency.</p>
+                    <ul class="list-disc pl-6 text-lg mb-6">
+                        <li>Carbon-neutral shipping options</li>
+                        <li>Recyclable packaging materials</li>
+                        <li>Energy-efficient warehouses</li>
+                        <li>Sustainability reporting tools</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 flex flex-col gap-6">
+                    <img src="https://source.unsplash.com/random/600x300/?sustainable-logistics" alt="Sustainable logistics practices" class="rounded-xl shadow-2xl card-hover" width="600" height="300" loading="lazy">
+                    <img src="https://source.unsplash.com/random/600x300/?recycle" alt="Recycling in logistics" class="rounded-xl shadow-2xl card-hover" width="600" height="300" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Global vs Local -->
+            <h3 class="text-4xl font-semibold mt-16 mb-8 text-center">Global & Local Logistics Expertise</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/60x60?text=🌍" alt="Global logistics icon" class="mr-4" width="60" height="60">
+                        <h4 class="text-2xl font-bold">Global Logistics</h4>
+                    </div>
+                    <p class="text-lg mb-4">Worldwide reach with expert handling of international regulations and customs.</p>
+                    <ul class="list-disc pl-6 text-base">
+                        <li>Multi-lingual support</li>
+                        <li>International partnerships</li>
+                        <li>Cross-border e-commerce solutions</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/60x60?text=🏠" alt="Local logistics icon" class="mr-4" width="60" height="60">
+                        <h4 class="text-2xl font-bold">Local Logistics</h4>
+                    </div>
+                    <p class="text-lg mb-4">Hyper-local efficiency with rapid response times and community-focused service.</p>
+                    <ul class="list-disc pl-6 text-base">
+                        <li>Same-day urban deliveries</li>
+                        <li>Local warehouse networks</li>
+                        <li>Customized regional strategies</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 hover:scale-105 transition-all" aria-label="Request a logistics service demo">Request a Personalized Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-gradient-to-b from-blue-50 to-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-blue-600 mb-12 text-center">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-xl card-hover">
+                    <p class="text-lg italic mb-6">"Tide Solution transformed our supply chain, reducing costs by 30% while improving delivery times."</p>
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/random/50x50/?person" alt="Client avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">John Doe</p>
+                            <p class="text-sm text-gray-600">CEO, Global Traders Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-xl card-hover">
+                    <p class="text-lg italic mb-6">"Their technology integration was seamless, providing real-time insights that revolutionized our operations."</p>
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/random/50x50/?person2" alt="Client avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Jane Smith</p>
+                            <p class="text-sm text-gray-600">Supply Chain Manager, EcoGoods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-xl card-hover">
+                    <p class="text-lg italic mb-6">"Sustainable practices without compromising efficiency - Tide Solution is our go-to logistics partner."</p>
+                    <div class="flex items-center">
+                        <img src="https://source.unsplash.com/random/50x50/?person3" alt="Client avatar" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Mike Johnson</p>
+                            <p class="text-sm text-gray-600">Operations Director, TechInnovate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-blue-600 mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <div class="bg-blue-50 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold text-xl flex justify-between items-center hover:bg-blue-100 transition-colors" onclick="toggleAccordion(this)">
+                        What makes Tide Solution different from other logistics providers?
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="max-h-0 overflow-hidden accordion-item">
+                        <p class="p-6 text-lg">Our unique blend of advanced technology, sustainable practices, and personalized service sets us apart, delivering superior results for our clients.</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold text-xl flex justify-between items-center hover:bg-blue-100 transition-colors" onclick="toggleAccordion(this)">
+                        How do you ensure the security of our shipments?
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="max-h-0 overflow-hidden accordion-item">
+                        <p class="p-6 text-lg">We employ state-of-the-art security measures including GPS tracking, tamper-evident seals, and 24/7 monitoring to safeguard your goods.</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold text-xl flex justify-between items-center hover:bg-blue-100 transition-colors" onclick="toggleAccordion(this)">
+                        Can you handle international customs clearance?
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="max-h-0 overflow-hidden accordion-item">
+                        <p class="p-6 text-lg">Yes, our team of customs experts handles all aspects of international clearance, ensuring smooth and compliant cross-border shipments.</p>
+                    </div>
+                </div>
+                <div class="bg-blue-50 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold text-xl flex justify-between items-center hover:bg-blue-100 transition-colors" onclick="toggleAccordion(this)">
+                        What industries do you serve?
+                        <span class="text-2xl">+</span>
+                    </button>
+                    <div class="max-h-0 overflow-hidden accordion-item">
+                        <p class="p-6 text-lg">We serve a wide range of industries including e-commerce, manufacturing, healthcare, retail, and more, with tailored solutions for each.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-24 gradient-bg text-white" data-aos="zoom-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-6">Stay Updated with Logistics Insights</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Subscribe to our newsletter for the latest trends, tips, and exclusive offers in supply chain management.</p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Enter your email" class="flex-grow p-4 rounded-l-full focus:outline-none">
+                <button type="submit" class="bg-yellow-400 text-blue-800 px-8 py-4 rounded-r-full font-bold hover:bg-yellow-300 transition-colors">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative gradient-bg text-white py-24 skyline-bg" data-aos="fade-up">
+        <div class="geometric-left"></div>
+        <div class="geometric-right"></div>
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-6xl font-bold mb-10">Let's Connect</h2>
+            <h3 class="text-4xl mb-8">Reach Out to Tide Solution</h3>
+            <p class="mb-4 text-xl">Phone: +123-456-7890</p>
+            <p class="mb-4 text-xl">Email: <a href="mailto:hello@tidesolution.com" class="underline hover:text-yellow-300" aria-label="Email Tide Solution">hello@tidesolution.com</a></p>
+            <p class="mb-10 text-xl">Address: 123 Anywhere St., Any City</p>
+            <form class="max-w-lg mx-auto space-y-6">
+                <input type="text" id="name" placeholder="Your Name" class="w-full p-4 rounded-full bg-white/20 border border-white/50 focus:border-white focus:outline-none text-white placeholder-white" required>
+                <input type="email" id="email" placeholder="Your Email" class="w-full p-4 rounded-full bg-white/20 border border-white/50 focus:border-white focus:outline-none text-white placeholder-white" required>
+                <textarea id="message" placeholder="Your Message" class="w-full p-4 rounded-3xl bg-white/20 border border-white/50 focus:border-white focus:outline-none text-white placeholder-white h-40" required></textarea>
+                <button type="submit" class="bg-white text-blue-600 px-10 py-4 rounded-full font-bold hover:bg-gray-100 hover:scale-105 transition-all" aria-label="Send message">Send Your Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8 text-center">
+        <p class="text-lg">&copy; 2025 Tide Solution. All rights reserved.</p>
+        <p class="mt-2 text-sm">Designed for efficiency | Powered by innovation</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('span');
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.textContent = '-';
+            }
+        }
+
+        // Pie Chart
+        new Chart(document.getElementById('pieChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'],
+                datasets: [{
+                    data: [20, 20, 20, 20, 20],
+                    backgroundColor: ['#bfdbfe', '#93c5fd', '#60a5fa', '#3b82f6', '#1d4ed8']
+                }]
+            },
+            options: {
+                responsive: true,
+                animation: {
+                    duration: 2000
+                }
+            }
+        });
+
+        // Line Chart
+        new Chart(document.getElementById('lineChart'), {
+            type: 'line',
+            data: {
+                labels: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'],
+                datasets: [
+                    { label: 'Series 1', data: [0, 10, 5, 15, 30], borderColor: '#bfdbfe', tension: 0.4 },
+                    { label: 'Series 2', data: [10, 5, 20, 10, 0], borderColor: '#60a5fa', tension: 0.4 },
+                    { label: 'Series 3', data: [20, 30, 25, 35, 50], borderColor: '#1d4ed8', tension: 0.4 }
+                ]
+            },
+            options: {
+                responsive: true,
+                animation: {
+                    duration: 2000
+                }
+            }
+        });
+    </script>
+</body>
+</html>
